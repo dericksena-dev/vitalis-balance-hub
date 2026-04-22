@@ -1,4 +1,4 @@
-import { motion } from "framer-motion">
+import { motion } from "framer-motion";
 import { Video, Clock, ShieldCheck, Home, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SmartImage } from "./SmartImage";
