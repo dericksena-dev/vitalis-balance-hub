@@ -11,7 +11,7 @@ const links = [
   { label: "Contato", href: "#contato" },
 ];
 
-const WHATSAPP = "https://wa.me/5562982350952";
+const WHATSAPP = "https://wa.me/5562982350952?text=Ol%C3%A1+gostaria+de+saber+mais+sobre+as+consultas+online";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
