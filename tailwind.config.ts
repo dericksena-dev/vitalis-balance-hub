@@ -57,11 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        gold: "hsl(var(--gold))",
+        rose: "hsl(var(--rose))",
+        "primary-glow": "hsl(var(--primary-glow))",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        display: ["'Cormorant Garamond'", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +87,25 @@ export default {
             height: "0",
           },
         },
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+        "fade-in": "fade-in 1s ease-out",
+        "float": "float 4s ease-in-out infinite",
       },
     },
   },
