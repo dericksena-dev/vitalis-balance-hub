@@ -33,12 +33,12 @@ export const Navbar = () => {
           : "bg-transparent"
       )}
     >
-      <nav className="container mx-auto flex items-center justify-between py-4">
+      <nav className="container mx-auto flex items-center justify-between py-3 sm:py-4">
         <a href="#top" className="flex flex-col leading-none">
-          <span className="font-display text-2xl font-semibold text-primary">
+          <span className="font-display text-xl font-semibold text-primary sm:text-2xl">
             Dra. Monna Bela
           </span>
-          <span className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+          <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[11px]">
             Endocrinologia
           </span>
         </a>

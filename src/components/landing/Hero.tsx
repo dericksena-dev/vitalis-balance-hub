@@ -10,13 +10,13 @@ export const Hero = () => {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-gradient-hero pt-32 pb-20 md:pt-40 md:pb-32"
+      className="relative overflow-hidden bg-gradient-hero pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-40 md:pb-32"
     >
       {/* Glow decorativo */}
       <div className="pointer-events-none absolute -top-20 -right-20 h-96 w-96 rounded-full bg-primary-glow/30 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 -left-32 h-[500px] w-[500px] rounded-full bg-accent/30 blur-3xl" />
 
-      <div className="container relative mx-auto grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="container relative mx-auto grid items-center gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-16">
         {/* Texto */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -29,19 +29,19 @@ export const Hero = () => {
             Endocrinologia & Terapia Hormonal
           </div>
 
-          <h1 className="font-display text-4xl font-medium leading-[1.05] text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-display text-[2rem] font-medium leading-[1.08] text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
             Equilíbrio hormonal para você viver{" "}
             <span className="italic text-primary">leve e com energia.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg">
             Mais do que tratar, meu propósito é transformar sua saúde e
             qualidade de vida. Atendimento médico personalizado em
             endocrinologia e terapia hormonal, com foco em vitalidade e
             bem-estar duradouro.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:gap-4">
             <Button asChild variant="hero" size="xl">
               <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
                 Agendar Consulta
@@ -53,21 +53,21 @@ export const Hero = () => {
             </Button>
           </div>
 
-          <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
+          <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-muted-foreground sm:gap-6">
             <div>
-              <p className="font-display text-2xl text-foreground">CRM 29031</p>
+              <p className="font-display text-xl text-foreground sm:text-2xl">CRM 29031</p>
               <p className="text-xs uppercase tracking-widest">Goiás</p>
             </div>
-            <div className="h-10 w-px bg-border" />
+            <div className="hidden h-10 w-px bg-border sm:block" />
             <div>
-              <p className="font-display text-2xl text-foreground">100%</p>
+              <p className="font-display text-xl text-foreground sm:text-2xl">100%</p>
               <p className="text-xs uppercase tracking-widest">
                 Personalizado
               </p>
             </div>
-            <div className="h-10 w-px bg-border" />
+            <div className="hidden h-10 w-px bg-border sm:block" />
             <div>
-              <p className="font-display text-2xl text-foreground">Online</p>
+              <p className="font-display text-xl text-foreground sm:text-2xl">Online</p>
               <p className="text-xs uppercase tracking-widest">& Presencial</p>
             </div>
           </div>
@@ -80,7 +80,7 @@ export const Hero = () => {
           transition={{ duration: 1, ease: [0.4, 0, 0.2, 1] }}
           className="order-1 lg:order-2"
         >
-          <div className="relative mx-auto max-w-md lg:max-w-none">
+          <div className="relative mx-auto max-w-xs sm:max-w-md lg:max-w-none">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-primary opacity-20 blur-2xl" />
             <SmartImage
               src={heroImg}
@@ -94,12 +94,12 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 rounded-2xl border border-border bg-card/95 p-4 shadow-soft backdrop-blur sm:-left-10"
+              className="absolute -bottom-4 -left-2 rounded-2xl border border-border bg-card/95 p-3 shadow-soft backdrop-blur sm:-bottom-6 sm:-left-10 sm:p-4"
             >
-              <p className="font-display text-lg leading-tight text-primary">
+              <p className="font-display text-base leading-tight text-primary sm:text-lg">
                 Saúde verdadeira
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-[11px] text-muted-foreground sm:text-xs">
                 começa de dentro para fora
               </p>
             </motion.div>

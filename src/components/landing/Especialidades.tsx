@@ -45,7 +45,7 @@ const especialidades = [
 ];
 
 export const Especialidades = () => (
-  <section id="especialidades" className="bg-background py-20 md:py-32">
+  <section id="especialidades" className="bg-background py-16 sm:py-20 md:py-32">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -57,17 +57,17 @@ export const Especialidades = () => (
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">
           Especialidades
         </p>
-        <h2 className="font-display text-4xl font-medium leading-tight text-foreground md:text-5xl">
+        <h2 className="font-display text-3xl font-medium leading-tight text-foreground sm:text-4xl md:text-5xl">
           Cuidado completo para cada{" "}
           <span className="italic text-primary">fase da sua vida.</span>
         </h2>
-        <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+        <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
           Atendimento personalizado em endocrinologia e terapia hormonal, com
           uma visão integrativa da saúde.
         </p>
       </motion.div>
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-5 sm:mt-14 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
         {especialidades.map((e, i) => (
           <motion.div
             key={e.title}
@@ -75,14 +75,14 @@ export const Especialidades = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: i * 0.07 }}
-            className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-7 shadow-soft transition-smooth hover:-translate-y-1 hover:shadow-elegant"
+            className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 shadow-soft transition-smooth hover:-translate-y-1 hover:shadow-elegant sm:p-7"
           >
             <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-primary opacity-0 blur-2xl transition-smooth group-hover:opacity-20" />
             <div className="relative">
               <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-primary text-primary-foreground shadow-soft">
                 <e.icon className="h-5 w-5" />
               </div>
-              <h3 className="font-display text-2xl text-foreground">
+              <h3 className="font-display text-xl text-foreground sm:text-2xl">
                 {e.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
