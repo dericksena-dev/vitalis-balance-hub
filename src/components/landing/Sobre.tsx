@@ -22,8 +22,8 @@ const valores = [
 ];
 
 export const Sobre = () => (
-  <section id="sobre" className="bg-background py-20 md:py-32">
-    <div className="container mx-auto grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+  <section id="sobre" className="bg-background py-16 sm:py-20 md:py-32">
+    <div className="container mx-auto grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -51,11 +51,11 @@ export const Sobre = () => (
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">
           Sobre mim
         </p>
-        <h2 className="font-display text-4xl font-medium leading-tight text-foreground md:text-5xl">
+        <h2 className="font-display text-3xl font-medium leading-tight text-foreground sm:text-4xl md:text-5xl">
           Cuidar é compreender cada pessoa em sua{" "}
           <span className="italic text-primary">totalidade.</span>
         </h2>
-        <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
           <p>
             Sou a <strong className="text-foreground">Dra. Monna Bela</strong> e
             trabalho com endocrinologia e terapia hormonal, com foco em

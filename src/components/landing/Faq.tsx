@@ -30,7 +30,7 @@ const faqs = [
 ];
 
 export const Faq = () => (
-  <section id="faq" className="bg-gradient-soft py-20 md:py-32">
+  <section id="faq" className="bg-gradient-soft py-16 sm:py-20 md:py-32">
     <div className="container mx-auto max-w-3xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -42,10 +42,10 @@ export const Faq = () => (
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">
           FAQ
         </p>
-        <h2 className="font-display text-4xl font-medium leading-tight text-foreground md:text-5xl">
+        <h2 className="font-display text-3xl font-medium leading-tight text-foreground sm:text-4xl md:text-5xl">
           Dúvidas <span className="italic text-primary">comuns</span>
         </h2>
-        <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+        <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
           Reuni as perguntas mais frequentes para te ajudar a dar o primeiro
           passo com confiança.
         </p>
@@ -63,12 +63,12 @@ export const Faq = () => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="overflow-hidden rounded-2xl border border-border/60 bg-card px-6 shadow-soft transition-smooth hover:shadow-elegant"
+              className="overflow-hidden rounded-2xl border border-border/60 bg-card px-5 shadow-soft transition-smooth hover:shadow-elegant sm:px-6"
             >
-              <AccordionTrigger className="py-5 text-left font-display text-lg font-medium text-foreground hover:no-underline md:text-xl">
+              <AccordionTrigger className="py-5 text-left font-display text-base font-medium text-foreground hover:no-underline sm:text-lg md:text-xl">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-base leading-relaxed text-muted-foreground">
+              <AccordionContent className="text-sm leading-relaxed text-muted-foreground sm:text-base">
                 {f.a}
               </AccordionContent>
             </AccordionItem>

@@ -7,11 +7,11 @@ export const Footer = () => (
     id="contato"
     className="border-t border-border bg-foreground text-background"
   >
-    <div className="container mx-auto py-16">
-      <div className="grid gap-12 md:grid-cols-3">
+    <div className="container mx-auto py-12 sm:py-16">
+      <div className="grid gap-10 sm:gap-12 md:grid-cols-3">
         {/* Brand */}
         <div>
-          <p className="font-display text-3xl font-medium text-background">
+          <p className="font-display text-2xl font-medium text-background sm:text-3xl">
             Dra. Monna Bela
           </p>
           <p className="mt-1 text-xs uppercase tracking-[0.25em] text-background/60">

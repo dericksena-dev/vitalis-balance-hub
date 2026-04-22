@@ -14,8 +14,8 @@ const beneficios = [
 ];
 
 export const ConsultaOnline = () => (
-  <section id="atendimento" className="relative bg-gradient-soft py-20 md:py-32">
-    <div className="container mx-auto grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+  <section id="atendimento" className="relative bg-gradient-soft py-16 sm:py-20 md:py-32">
+    <div className="container mx-auto grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -25,11 +25,11 @@ export const ConsultaOnline = () => (
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">
           Consultas Online
         </p>
-        <h2 className="font-display text-4xl font-medium leading-tight text-foreground md:text-5xl">
+        <h2 className="font-display text-3xl font-medium leading-tight text-foreground sm:text-4xl md:text-5xl">
           Cuidar da sua saúde ficou{" "}
           <span className="italic text-primary">ainda mais fácil.</span>
         </h2>
-        <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+        <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg">
           Nas consultas online, você recebe o mesmo acolhimento, escuta e
           atenção das consultas presenciais — com a praticidade de ser atendida
           onde estiver.
