@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SmartImage } from "./SmartImage";
 import heroImg from "@/assets/dra-monna-hero.png";
 
-const WHATSAPP = "https://wa.me/5562982350952";
+const WHATSAPP = "https://wa.me/5562982350952?text=Ol%C3%A1+gostaria+de+saber+mais+sobre+as+consultas+online";
 
 export const Hero = () => {
   return (
