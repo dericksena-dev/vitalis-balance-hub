@@ -10,9 +10,9 @@ import { WhatsAppFAB } from "@/components/landing/WhatsAppFAB";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen w-full max-w-[100vw] overflow-x-hidden bg-background">
       <Navbar />
-      <main>
+      <main className="w-full max-w-[100vw] overflow-x-hidden">
         <Hero />
         <Sobre />
         <ConsultaOnline />

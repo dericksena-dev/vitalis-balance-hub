@@ -14,7 +14,7 @@ const beneficios = [
 ];
 
 export const ConsultaOnline = () => (
-  <section id="atendimento" className="relative bg-gradient-soft py-16 sm:py-20 md:py-32">
+  <section id="atendimento" className="relative overflow-hidden bg-gradient-soft py-16 sm:py-20 md:py-32">
     <div className="container mx-auto grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}

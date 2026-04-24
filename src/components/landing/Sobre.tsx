@@ -22,7 +22,7 @@ const valores = [
 ];
 
 export const Sobre = () => (
-  <section id="sobre" className="bg-background py-16 sm:py-20 md:py-32">
+  <section id="sobre" className="overflow-hidden bg-background py-16 sm:py-20 md:py-32">
     <div className="container mx-auto grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
