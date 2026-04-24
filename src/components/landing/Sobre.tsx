@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Stethoscope, Leaf } from "lucide-react";
 import { SmartImage } from "./SmartImage";
-import palestraImg from "@/assets/dra-monna-evento.png";
+ import palestraImg from "@/assets/dra-monna-evento-v2.webp";
 
 const valores = [
   {
