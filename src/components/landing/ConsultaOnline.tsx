@@ -72,8 +72,8 @@ export const ConsultaOnline = () => (
         <SmartImage
           src={onlineImg}
           alt="Mulher em consulta online de telemedicina"
-          width={1280}
-          height={896}
+           width={1500}
+           height={1418}
           wrapperClassName="rounded-[2rem] shadow-elegant"
         />
       </motion.div>

@@ -35,8 +35,8 @@ export const Sobre = () => (
           <SmartImage
             src={palestraImg}
             alt="Dra. Monna Bela em evento médico"
-            width={1536}
-            height={1920}
+             width={1680}
+             height={1920}
             wrapperClassName="rounded-[2rem] shadow-elegant"
           />
         </div>
