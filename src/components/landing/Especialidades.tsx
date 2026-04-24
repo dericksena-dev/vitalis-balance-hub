@@ -45,7 +45,7 @@ const especialidades = [
 ];
 
 export const Especialidades = () => (
-  <section id="especialidades" className="bg-background py-16 sm:py-20 md:py-32">
+  <section id="especialidades" className="overflow-hidden bg-background py-16 sm:py-20 md:py-32">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
