@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Video, Clock, ShieldCheck, Home, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SmartImage } from "./SmartImage";
-import onlineImg from "@/assets/consulta-online.jpg";
+ import onlineImg from "@/assets/consulta-online-v2.webp";
 
 const WHATSAPP = "https://wa.me/5562982350952?text=Ol%C3%A1+gostaria+de+saber+mais+sobre+as+consultas+online";
 
@@ -72,8 +72,8 @@ export const ConsultaOnline = () => (
         <SmartImage
           src={onlineImg}
           alt="Mulher em consulta online de telemedicina"
-          width={1280}
-          height={896}
+           width={1500}
+           height={1418}
           wrapperClassName="rounded-[2rem] shadow-elegant"
         />
       </motion.div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Stethoscope, Leaf } from "lucide-react";
 import { SmartImage } from "./SmartImage";
-import palestraImg from "@/assets/dra-monna-evento.png";
+ import palestraImg from "@/assets/dra-monna-evento-v2.webp";
 
 const valores = [
   {
@@ -35,8 +35,8 @@ export const Sobre = () => (
           <SmartImage
             src={palestraImg}
             alt="Dra. Monna Bela em evento médico"
-            width={1536}
-            height={1920}
+             width={1680}
+             height={1920}
             wrapperClassName="rounded-[2rem] shadow-elegant"
           />
         </div>
